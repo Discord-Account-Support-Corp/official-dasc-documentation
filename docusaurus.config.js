@@ -6,7 +6,8 @@ const config = {
   tagline: 'Discord Account Support Corp Documentation',
   favicon: 'img/favicon.ico',
 
-  url: 'https://dasc-docs.example.com',
+  // Set DOCUSAURUS_URL to the deployed site URL. Keep local development self-contained.
+  url: process.env.DOCUSAURUS_URL || 'http://localhost:3000',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -20,7 +21,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/Discord-Account-Support-Corp/dasc-docs/edit/main/',
+          editUrl: 'https://github.com/Discord-Account-Support-Corp/official-dasc-documentation/edit/main/',
         },
         blog: false,
         theme: {
